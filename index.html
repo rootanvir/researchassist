@@ -43,11 +43,13 @@
       backdrop-filter: blur(8px);
     }
   </style>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="resources/favicon2.png">
 </head>
 
 <body class="bg-dark text-gray-100 min-h-screen flex flex-col font-sans">
 
-    <!-- Live Date & Time (Top Left) -->
+  <!-- Live Date & Time (Top Left) -->
   <div id="datetime"
     class="fixed top-4 left-4 bg-gray-800/80 px-4 py-2 rounded-lg text-sm font-semibold text-accent shadow-lg">
     <!-- JS will insert time here -->
@@ -56,19 +58,24 @@
 
   <div class="container mx-auto px-4 py-10 flex-1">
     <!-- Header -->
-    <header class="text-center mb-12">
-      <div class="flex items-center justify-center space-x-3 mb-4">
-        <i class="fas fa-hands text-accent text-5xl drop-shadow-lg"></i>
+    <header class="flex flex-col items-center justify-center mb-12 text-center">
+      <!-- Logo + Title -->
+      <div class="flex flex-col md:flex-row md:items-center md:space-x-4">
+        <img src="resources/favicon.png" alt="Logo"
+          class="h-20 w-20 md:h-24 md:w-24 object-contain drop-shadow-lg mb-4 md:mb-0">
         <h1
-          class="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
+          class="text-3xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent leading-snug md:leading-relaxed">
           Sign Language Research
         </h1>
       </div>
-      <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+
+      <!-- Subtitle -->
+      <p class="text-gray-400 text-base md:text-lg max-w-3xl mt-4 leading-relaxed">
         A central hub for accessing research documents, data, and important announcements in Bangla Sign Language
         studies.
       </p>
     </header>
+
 
     <!-- Main Content -->
     <div class="flex flex-col lg:flex-row gap-10">
