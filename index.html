@@ -64,76 +64,106 @@
 
     <!-- Main Content -->
     <div class="flex flex-col lg:flex-row gap-10">
+
+
       <!-- Research Documents -->
       <div class="w-full lg:w-1/3">
         <h2 class="text-2xl font-bold mb-5 text-accent">Research Documents</h2>
-        <div class="space-y-5">
-          <!-- Google Doc -->
-          <div class="document-card bg-card rounded-xl p-5 shadow-md">
-            <div class="flex items-start">
-              <div class="bg-gradient-to-br from-secondary to-primary p-3 rounded-xl mr-4 shadow-md">
-                <i class="fas fa-file-word text-xl"></i>
+        <div class="bg-card/90 rounded-2xl p-6 shadow-xl info-board">
+          <div class="space-y-6">
+            <!-- Google Doc -->
+            <div
+              class="notice-card bg-gray-800/80 p-5 rounded-xl cursor-pointer border border-gray-700 flex items-center"
+              onclick="window.open('https://docs.google.com/document/d/19w6_9eaaJg9zLJPU9dUVQtni3WroJ0HdfqXjDwpKO80/edit?tab=t.0','_blank');">
+              <!-- Google Docs Logo (PNG) -->
+              <div class="mr-4 flex-shrink-0">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Google_Docs_logo_%282014-2020%29.svg/47px-Google_Docs_logo_%282014-2020%29.svg.png"
+                  alt="Google Docs Logo" class="h-10 w-10 object-contain" />
               </div>
-              <div class="flex-1">
-                <h3 class="text-lg font-semibold mb-1">Google Doc</h3>
-                <p class="text-gray-400 text-sm mb-3">
+              <div>
+                <h3 class="font-semibold text-lg text-accent mb-1">Google Doc</h3>
+                <p class="text-gray-400 text-sm">
                   Reference, objective, methodology, results, and limitations from the listed papers.
                 </p>
-                <a href="https://docs.google.com/document/d/19w6_9eaaJg9zLJPU9dUVQtni3WroJ0HdfqXjDwpKO80/edit?tab=t.0"
-                  target="_blank"
-                  class="inline-block bg-gradient-to-r from-secondary to-primary text-white font-medium py-1.5 px-5 rounded-lg hover:opacity-90 transition text-sm">
-                  <i class="fas fa-external-link-alt mr-1"></i> Open Document
-                </a>
               </div>
             </div>
-          </div>
-          <!-- Google Sheet -->
-          <div class="document-card bg-card rounded-xl p-5 shadow-md">
-            <div class="flex items-start">
-              <div class="bg-gradient-to-br from-secondary to-primary p-3 rounded-xl mr-4 shadow-md">
-                <i class="fas fa-file-excel text-xl"></i>
+
+            <!-- Google Sheet -->
+            <div
+              class="notice-card bg-gray-800/80 p-5 rounded-xl cursor-pointer border border-gray-700 flex items-center"
+              onclick="window.open('https://docs.google.com/spreadsheets/d/1-hZMe9eEnlGh9X2MyE3v3DCbmnjpgq65xeQIH8G0N-M/edit?gid=0#gid=0','_blank');">
+              <!-- Google Sheets Logo (PNG) -->
+              <div class="mr-4 flex-shrink-0">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Google_Sheets_logo_%282014-2020%29.svg/49px-Google_Sheets_logo_%282014-2020%29.svg.png"
+                  alt="Google Sheets Logo" class="h-10 w-10 object-contain" />
               </div>
-              <div class="flex-1">
-                <h3 class="text-lg font-semibold mb-1">Google Sheet</h3>
-                <p class="text-gray-400 text-sm mb-3">
-                  List of research papers with DOI numbers
-                </p>
-                <a href="https://docs.google.com/spreadsheets/d/1-hZMe9eEnlGh9X2MyE3v3DCbmnjpgq65xeQIH8G0N-M/edit?gid=0#gid=0"
-                  target="_blank"
-                  class="inline-block bg-gradient-to-r from-secondary to-primary text-white font-medium py-1.5 px-5 rounded-lg hover:opacity-90 transition text-sm">
-                  <i class="fas fa-external-link-alt mr-1"></i> Open Sheet
-                </a>
+              <div>
+                <h3 class="font-semibold text-lg text-accent mb-1">Google Sheet</h3>
+                <p class="text-gray-400 text-sm">List of research papers with DOI numbers</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
 
       <!-- Information Board -->
       <div class="w-full lg:w-1/3">
         <h2 class="text-2xl font-bold mb-5 text-accent">Information Board</h2>
         <div class="bg-card/90 rounded-2xl p-6 shadow-xl info-board">
           <div class="space-y-6">
-            <div class="notice-card bg-gray-800/80 p-5 rounded-xl cursor-pointer border border-gray-700"
+
+            <!-- SCI-HUB -->
+            <div
+              class="notice-card bg-gray-800/80 p-5 rounded-xl cursor-pointer border border-gray-700 flex items-center"
               onclick="window.open('https://sci-hub.se/','_blank');">
-              <h3 class="font-semibold text-lg text-accent">SCI-HUB Access</h3>
-              <p class="text-gray-400 text-sm">Find some closed-access research papers here.</p>
+              <div class="mr-4 flex-shrink-0 bg-gray-100 p-2 rounded-lg flex items-center justify-center">
+                <img src="https://sci-hub.se/pictures/sci-hub%20red.svg" alt="Sci-Hub Logo"
+                  class="h-12 w-12 object-contain" />
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg text-accent">SCI-HUB Access</h3>
+                <p class="text-gray-400 text-sm">Find some closed-access research papers here.</p>
+              </div>
             </div>
 
-            <div class="notice-card bg-gray-800/80 p-5 rounded-xl cursor-pointer border border-gray-700"
+            <!-- Google Scholar -->
+            <div
+              class="notice-card bg-gray-800/80 p-5 rounded-xl cursor-pointer border border-gray-700 flex items-center"
               onclick="window.open('https://scholar.google.com/','_blank');">
-              <h3 class="font-semibold text-lg text-accent">Google Scholar</h3>
-              <p class="text-gray-400 text-sm">Search for open-access and indexed research articles.</p>
+              <div class="mr-4 flex-shrink-0">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/64px-Google_Scholar_logo.svg.png"
+                  alt="Google Scholar Logo" class="h-10 w-10 object-contain" />
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg text-accent">Google Scholar</h3>
+                <p class="text-gray-400 text-sm">Search for open-access and indexed research articles.</p>
+              </div>
             </div>
-            
-            <div class="notice-card bg-gray-800/80 p-5 rounded-xl cursor-pointer border border-gray-700"
+
+            <!-- Keras -->
+            <div
+              class="notice-card bg-gray-800/80 p-5 rounded-xl cursor-pointer border border-gray-700 flex items-center"
               onclick="window.open('https://keras.io/api/','_blank');">
-              <h3 class="font-semibold text-lg text-accent">AI model from Keras</h3>
-              <p class="text-gray-400 text-sm">A set of all-purpose models.</p>
+              <div class="mr-4 flex-shrink-0">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Keras_logo.svg/64px-Keras_logo.svg.png"
+                  alt="Keras Logo" class="h-10 w-10 object-contain" />
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg text-accent">AI model from Keras</h3>
+                <p class="text-gray-400 text-sm">A set of all-purpose models.</p>
+              </div>
             </div>
+
           </div>
         </div>
       </div>
+
 
       <!-- Dataset Section -->
       <div class="w-full lg:w-1/3">
@@ -146,6 +176,13 @@
               <h3 class="font-semibold text-lg text-accent">Kaggle Datasets</h3>
               <p class="text-gray-400 text-sm">Ishara-Lipi: Bangla Sign Language Dataset</p>
             </div>
+
+            <div class="notice-card bg-gray-800/80 p-5 rounded-xl cursor-pointer border border-gray-700"
+              onclick="window.open('https://www.kaggle.com/datasets/sumon3455/bangla-sign-language-video-dataset','_blank');">
+              <h3 class="font-semibold text-lg text-accent">Kaggle Datasets</h3>
+              <p class="text-gray-400 text-sm">Bangla Sign Language Video Dataset</p>
+            </div>
+
 
 
           </div>
